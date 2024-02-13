@@ -191,7 +191,7 @@ class _LaptopScreenState extends State<LaptopScreen> {
                     );
                   },
                 ),
-              ],
+              ], // Ozgardi
             ),
           ),
         ],
