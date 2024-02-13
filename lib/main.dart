@@ -22,6 +22,8 @@ class MyApp extends StatelessWidget {
         );
       },
       child: CategoriesScreen(),
+      // something new
+
     );
   }
 }
