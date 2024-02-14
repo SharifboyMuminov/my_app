@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'screen/categories_screen/shop_screen/Categories_screen.dart';
+import 'screen/info_screen/info_screen.dart';
 
 void main(List<String> args) {
   runApp(MyApp());

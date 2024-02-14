@@ -4,12 +4,14 @@ import 'package:flutter_svg/svg.dart';
 import 'package:homework_19/moduls.dart/enums.dart';
 import 'package:homework_19/moduls.dart/moduklcha.dart';
 import 'package:homework_19/repo.dart/laptop_repo.dart';
+import 'package:homework_19/screen/info_screen/info_screen.dart';
 import 'package:homework_19/screen/laptop_screen/widgets/laptop_button.dart';
 import 'package:homework_19/utils/app_colors.dart';
 import 'package:homework_19/utils/app_icons.dart';
 import 'package:homework_19/utils/size.dart';
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// asdvadfv
 class LaptopScreen extends StatefulWidget {
   const LaptopScreen({super.key, required this.category});
 
@@ -158,7 +160,16 @@ class _LaptopScreenState extends State<LaptopScreen> {
               ),
               itemBuilder: (context, index) {
                 return LaptopButton(
-                  onTab: () {},
+                  onTab: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return InfoScreen(modul: dataBases[index]);
+                        },
+                      ),
+                    );
+                  },
                   item: dataBases[index],
                 );
               },
